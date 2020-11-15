@@ -13,10 +13,10 @@ DHL低至12.5+U,FEDEX低至11+U,UPS红单低至10.9+U,2-3天入仓！
 DHL低至12.5+U,FEDEX低至11+U,UPS红单低至10.9+U,2-3天入仓！
 提供绝对日本本地税单，官方快递税单，日本换标贴标，退仓，改地址，打包，卡车派送等各类服务！">
     <meta name="format-detection" content="telephone=no">
-    <link type="text/css" rel="stylesheet" href="css/style_cn_v=4.0.2.5.css">
-    <script type="text/javascript" src="jquery/jquery-fy.js"></script>
-    <script type="text/javascript" src="jquery/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="inc/global_v=4.0.2.5.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AiPacino/two@main/css/style_cn_v=4.0.2.5.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/AiPacino/two@main/jquery/jquery-fy.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/AiPacino/two@main/jquery/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/AiPacino/two@main/inc/global_v=4.0.2.5.js"></script>
 </head>
 <body>
 <div id="main">
@@ -107,7 +107,7 @@ DHL低至12.5+U,FEDEX低至11+U,UPS红单低至10.9+U,2-3天入仓！
             });
         });
     </script>
-    <div style="min-width:1200px;height:300px;background:url(http://www.kailide56.com/uploadfiles/20180614-152155.jpg) no-repeat center top;"></div>
+    <div style="min-width:1200px;height:300px;background:url(https://cdn.jsdelivr.net/gh/AiPacino/two@main/uploadfiles/20180614-152155.jpg) no-repeat center top;"></div>
     <div id="content">
         <div id="left"><h2 class="left_title">新闻中心</h2>
             <dl class="left_menu">
@@ -173,7 +173,49 @@ DHL低至12.5+U,FEDEX低至11+U,UPS红单低至10.9+U,2-3天入仓！
             <p style="text-align: center;">&nbsp;</p>
             <p style="display:none;"><img src="http://www.kailide56.com/images/loading2.gif"></p></div>
     </div>
-    <script type="text/javascript" src="qq.php.html"></script>
+    <script>
+
+        function QQ() {
+            var Div = document.createElement('div');
+            Div.id = 'qq_online';
+            Div.style.position = 'absolute';
+            Div.style.top = '180px';
+            var Html = '';
+            Div.style.right = '0px';
+            Div.className = 'qq_onlines_6';
+            Html += '<div id="qq_onlines_top">在 线 咨 询<p class="qq_onlines_small_right" onclick="QQ_Close();"><strong>在线咨询</strong></p></div>';
+            Html += '<div id="qq_onlines_box">';
+            Html += '<p id="qq_onlines_tel">服务热线<strong>0755-27331986</strong></p>';
+            Html += '<p id="qq_onlines_list">';
+            Html += '<a href="tencent://message/?uin=3008199486&Site=客服主管-黄晓晓&Menu=yes"><img src="images/qq.png">客服主管-黄晓晓</a>';
+            Html += '<a href="tencent://message/?uin=3008091120&Site=市场专员-杨小敏&Menu=yes"><img src="images/qq.png">市场专员-杨小敏</a>';
+            Html += '<a href="tencent://message/?uin=3008199489&Site=港前客服-温秋云&Menu=yes"><img src="images/qq.png">港前客服-温秋云</a>';
+            Html += '<a href="tencent://message/?uin=3008199490&Site=港前客服-赵东丽&Menu=yes"><img src="images/qq.png">港前客服-赵东丽</a>';
+            Html += '<a href="tencent://message/?uin=3008199486&Site=港后客服-王丹&Menu=yes"><img src="images/qq.png">港后客服-王丹</a>';
+            Html += '<a href="tencent://message/?uin=3008091109&Site=销售代表-付梅梅&Menu=yes"><img src="images/qq.png">销售代表-付梅梅</a>';
+            Html += '</p>';
+            Html += '<p id="qq_onlines_tdc"><img src="uploadfiles/20190314-191314.jpg" /></p>';
+            Html += '</div>';
+            Div.innerHTML = Html;
+            document.body.appendChild(Div);
+            FloatDiv('qq_online', 180);
+        }
+
+        if (document.all) {
+            window.attachEvent('onload', QQ)
+        } else {
+            window.addEventListener('load', QQ, false);
+        }
+
+        function QQ_Close() {
+            if ($('#qq_online').css('right') == '-130px') {
+                $('#qq_online').animate({right: '0px'}, 300);
+            } else {
+                $('#qq_online').animate({right: '-130px'}, 300);
+            }
+        }
+
+    </script>
     <div id="login_bg" onclick="$('#login,#reg,#login_bg').hide();"></div>
     <div id="login" class="login_form"><img src="http://www.kailide56.com/images/close.jpg"
                                             onclick="$('#login,#login_bg').hide();">
