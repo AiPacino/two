@@ -22,8 +22,7 @@
              data-re="section=company&section_label=公司信息&type=input&env=gsmc&env_label=公司名称&title=深圳市凯利德国际物流有限公司">
             欢迎光临深圳市凯利德国际物流有限公司 <span id="header_as">
                 <a href="javascript:void(0);" onclick="$('#login,#login_bg').show();">会员登录</a><span>|</span><a
-                        href="javascript:void(0);" onclick="$('#reg,#login_bg').show();">会员注册</a><span>|</span><a
-                        href="javascript:void(0)" onclick="AddFavorite('http://www.kailide56.com','深圳市凯利德国际物流有限公司');">加入收藏</a></span>
+                        href="javascript:void(0);" onclick="$('#reg,#login_bg').show();">会员注册</a><span></span>
         </div>
     </div>
     <div id="header_blk">
@@ -51,7 +50,16 @@
                 </p>
             </li>
             <li>
-                <a href="/news.html?&section=gszx&env=xw" class="nav_out">公司资讯</a>
+                <a class="nav_out">公司资讯</a>
+                <p>
+                    <a
+                            data-re="section=gongsizixun&section_label=公司资讯&env=gongsizixun&env_label=公司资讯&page_size=1&type=blog&source_url=/news_detail.html&content_id=123&created_at=2020-06-28"
+                            href="/news_detail.html?&section=gongsizixun&env=gongsizixun&id=123">公司资讯</a>
+                    <a
+                            data-re="section=hangyexinwen&section_label=行业新闻&env=hangyexinwen&env_label=行业新闻&page_size=1&type=blog&source_url=/news_detail.html&content_id=123&created_at=2020-06-28"
+
+                            href="/news_detail.html?&section=hangyexinwen&env=hangyexinwen&id=123">行业新闻</a>
+                </p>
             </li>
             <li>
                 <a class="nav_out">我们的产品</a>
@@ -159,8 +167,9 @@
                 </div>
                 <h3 id="tnews_title">通知公告</h3>
                 <div id="tnews">
-                    <p data-re="section=tzgg&section_label=通知公告&type=blog&env=tzgg&env_label=通知公告&title=感谢支持&page_size=6&created_at=2020-06-28">
-                        <a href="/news_detail.html?&id=post_id"
+                    <p
+                            data-re="section=tongzhigonggao&section_label=通知公告&env=tongzhigonggao&env_label=通知公告&page_size=10&title=感谢支持&type=blog&source_url=/news_detail.html&content_id=123&created_at=2020-06-28">
+                        <a href="/news_detail.html?&section=tongzhigonggao&env=tongzhigonggao&id=123"
                            title="感谢支持"
                            target="_blank">感谢支持
                         </a>
@@ -207,7 +216,7 @@
                         <span style="color:#FFFFFF;">
                             <span style="font-family: Arial, Helvetica, sans-serif;"
                                   data-re="section=company&section_label=公司信息&type=input&env=gsjj&env_label=公司简介&title=关于我们">
-                                关于我们
+                                深圳市红彤森货运代理有限公司 ，是一家专业的国际货代服务运营商，主要从事于全球国际快递、国际空运、国际海运、国际进口业务的发展和服务，公司合作伙伴遍布全球200多个国家和地区,为多样化的客户群体提供专业一流的货运解决方案,努力打造货运行业的第一品牌，立志发展成为一家最具规模及备受推崇的国际知名综合物流服务商。
                             </span>
                         </span>
                     </p>
@@ -219,23 +228,24 @@
         <p>我们拥有最专业的供应链管理团队和服务</p></div>
     <div id="inews_box">
         <ul id="inews_menu">
-            <li><a href="/news.html?&section=gszx&env=xw">公司资讯</a></li>
-            <li><a href="/news.html?&section=hyxw&env=hyxwx">行业新闻</a></li>
+            <li><a href="/news_detail.html?&section=gongsizixun&env=gongsizixun">公司资讯</a></li>
+            <li><a href="/news_detail.html?&section=hangyexinwen&env=hangyexinwen">行业新闻</a></li>
         </ul>
         <ul class="inews">
             <li class="gots"
-                data-re="section=gszx&section_label=公司资讯&type=blog&env=xw&env_label=公司资讯&title=感谢支持&id=blog_id&page_size=6&created_at=2020-06-28">
-                <a href="/news_detail.html?&id=blog_id"
+                data-re="section=gongsizixun&section_label=公司资讯&env=gongsizixun&env_label=公司资讯&page_size=6&title=感谢支持&type=blog&source_url=/news_detail.html&content_id=123&created_at=2020-06-28"
+            >
+                <a href="/news_detail.html?&section=gongsizixun&env=gongsizixun&id=123"
                    title="感谢支持"
                    target="_blank">感谢支持</a><span>2020-06-28</span>
             </li>
         </ul>
         <ul class="inews">
             <li class="gots"
-                data-re="section=hyxw&section_label=行业新闻&type=blog&env=hyxwx&env_label=行业新闻&title=12.5号报价降价更新&id=blog_id&page_size=6&created_at=2019-12-05">
-                <a href="/news_detail.html?&id=blog_id"
+                data-re="section=hangyexinwen&section_label=行业新闻&env=hangyexinwen&env_label=行业新闻&page_size=10&title=感谢支持&type=blog&source_url=/news_detail.html&content_id=123&created_at=2020-06-28">
+                <a href="/news_detail.html?&section=hangyexinwen&env=hangyexinwen&id=123"
                    title="12.5号报价降价更新"
-                   target="_blank">12.5号报价降价更新</a><span>2019-12-05</span>
+                   target="_blank">感谢支持</a><span>2020-06-28</span>
             </li>
         </ul>
     </div>
@@ -300,9 +310,7 @@
                 </li>
             </ul>
             <div class="clear"></div>
-            <div id="footer_qrcode"><img
-                        data-re="section=company&section_label=公司信息&env=gzwxljgd&env_label=关注微信，了解更多&type=img&content_url=20190314-191314.jpg"
-                        src="https://cdn.jsdelivr.net/gh/AiPacino/two@main/images/20190314-191314.jpg"><br>关注微信，了解更多
+            <div id="footer_qrcode"><img src="https://cdn.jsdelivr.net/gh/AiPacino/two@main/images/qr.jpg"><br>关注微信，了解更多
             </div>
         </div>
     </div>
@@ -318,54 +326,12 @@
             <p style="display:none;"><img src="https://cdn.jsdelivr.net/gh/AiPacino/two@main/images/loading2.gif"></p>
         </div>
     </div>
-    <script>
-
-        function QQ() {
-            var Div = document.createElement('div');
-            Div.id = 'qq_online';
-            Div.style.position = 'absolute';
-            Div.style.top = '180px';
-            var Html = '';
-            Div.style.right = '0px';
-            Div.className = 'qq_onlines_6';
-            Html += '<div id="qq_onlines_top">在 线 咨 询<p class="qq_onlines_small_right" onclick="QQ_Close();"><strong>在线咨询</strong></p></div>';
-            Html += '<div id="qq_onlines_box">';
-            Html += '<p id="qq_onlines_tel">服务热线<strong>0755-27331986</strong></p>';
-            Html += '<p id="qq_onlines_list">';
-            Html += '<a href="tencent://message/?uin=3008199486&Site=客服主管-黄晓晓&Menu=yes"><img src="https://cdn.jsdelivr.net/gh/AiPacino/two@main/images/qq.png">客服主管-黄晓晓</a>';
-            Html += '<a href="tencent://message/?uin=3008091120&Site=市场专员-杨小敏&Menu=yes"><img src="https://cdn.jsdelivr.net/gh/AiPacino/two@main/images/qq.png">市场专员-杨小敏</a>';
-            Html += '<a href="tencent://message/?uin=3008199489&Site=港前客服-温秋云&Menu=yes"><img src="https://cdn.jsdelivr.net/gh/AiPacino/two@main/images/qq.png">港前客服-温秋云</a>';
-            Html += '<a href="tencent://message/?uin=3008199490&Site=港前客服-赵东丽&Menu=yes"><img src="https://cdn.jsdelivr.net/gh/AiPacino/two@main/images/qq.png">港前客服-赵东丽</a>';
-            Html += '<a href="tencent://message/?uin=3008199486&Site=港后客服-王丹&Menu=yes"><img src="https://cdn.jsdelivr.net/gh/AiPacino/two@main/images/qq.png">港后客服-王丹</a>';
-            Html += '<a href="tencent://message/?uin=3008091109&Site=销售代表-付梅梅&Menu=yes"><img src="https://cdn.jsdelivr.net/gh/AiPacino/two@main/images/qq.png">销售代表-付梅梅</a>';
-            Html += '</p>';
-            Html += '<p id="qq_onlines_tdc"><img src="https://cdn.jsdelivr.net/gh/AiPacino/two@main/images/20190314-191314.jpg" /></p>';
-            Html += '</div>';
-            Div.innerHTML = Html;
-            document.body.appendChild(Div);
-            FloatDiv('qq_online', 180);
-        }
-
-        if (document.all) {
-            window.attachEvent('onload', QQ)
-        } else {
-            window.addEventListener('load', QQ, false);
-        }
-
-        function QQ_Close() {
-            if ($('#qq_online').css('right') == '-130px') {
-                $('#qq_online').animate({right: '0px'}, 300);
-            } else {
-                $('#qq_online').animate({right: '-130px'}, 300);
-            }
-        }
-
-    </script>
     <div id="login_bg" onclick="$('#login,#reg,#login_bg').hide();"></div>
     <input data-re="section=company&section_label=公司信息&type=input&env=companyNo&env_label=公司代号&title=NoB"
            type="hidden" id="company_no" value="NoB"/>
-    <div id="login" class="login_form"><img src="https://cdn.jsdelivr.net/gh/AiPacino/two@main/images/close.jpg"
-                                            onclick="$('#login,#login_bg').hide();">
+    <div id="login" class="login_form">
+        <img src="https://cdn.jsdelivr.net/gh/AiPacino/two@main/images/close.jpg"
+             onclick="$('#login,#login_bg').hide();">
         <h3>会员登录</h3>
         <form name="form_login" method="get" action="" onsubmit="return Login(this);">
             <p><input type="text" id="login_user" placeholder="请输入手机号/账号"></p>
