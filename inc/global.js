@@ -1,4 +1,4 @@
-function $2(ObjID){
+function helloworld(ObjID){
 	return document.getElementById(ObjID);
 }
 
@@ -107,7 +107,7 @@ function key(e){
 }
 
 function CheckSearch(Language){
-	var SearchKey=("search_key");
+	var SearchKey=helloworld("search_key");
 	if (SearchKey.value=="" || SearchKey.value=="请输入搜索关键词" || SearchKey.value=="Please enter keywords"){
 		if (Language=="cn"){
 			alert("请输入搜索关键词！");
@@ -124,7 +124,7 @@ function CheckSearch2(Evt,Language){
 	Evt=Evt?Evt:(window.event?window.event:"");
 	var Key=Evt.keyCode?Evt.keyCode:Evt.which;
 	if (Key==13){
-		var SearchKey=("search_key");
+		var SearchKey=helloworld("search_key");
 		if (SearchKey.value=="" || SearchKey.value=="请输入搜索关键词" || SearchKey.value=="Please enter keywords"){
 			if (Language=="cn"){
 				alert("请输入搜索关键词！");
@@ -139,14 +139,14 @@ function CheckSearch2(Evt,Language){
 }
 
 function FloatDiv(ObjID,Ch){
-	var Did=(ObjID);
+	var Did=helloworld(ObjID);
 	var DidTop=parseInt(Did.style.top);
 	var Diff=(document.documentElement.scrollTop+document.body.scrollTop+Ch-DidTop)*.80;
 	Did.style.top=Ch+document.documentElement.scrollTop+document.body.scrollTop-Diff+"px";
 	setTimeout("FloatDiv('"+ObjID+"',"+Ch+")",20);
 }
 function FloatDiv2(ObjID,Ch){
-	var Did=(ObjID);
+	var Did=helloworld(ObjID);
 	var DidTop=parseInt(Did.style.top);
 	var Diff=(document.documentElement.clientHeight-53-Ch+document.documentElement.scrollTop+document.body.scrollTop-DidTop)*.80;
 	Did.style.top=document.documentElement.clientHeight-53-Ch+document.documentElement.scrollTop+document.body.scrollTop-Diff+"px";
@@ -242,7 +242,7 @@ function Login(ObjForm){
 			Loading_Remove(1);
 			var code=data.result_code;
 			if (code==0){
-				window.location.href='https://www.i-oms.cn/'+data.body;
+				window.location.href='http://www.i-oms.cn/'+data.body;
 			}else if (code == 1001){
 				alert('密码或者用户名错误!');
 			}else{
@@ -369,6 +369,8 @@ function Wints(Content){
 	win_ts_tid1=setTimeout(function(){$("#win_ts").css({"top":"20%","opacity":"0"});},1500);
 	win_ts_tid2=setTimeout(function(){$("#win_ts").remove();},2500);
 }
+
+/*===================================================================================*/
 
 $(function(){
 	if ($(".editorc").length>0) PicWidth();
