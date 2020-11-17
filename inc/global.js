@@ -1,4 +1,4 @@
-function (ObjID){
+function $2(ObjID){
 	return document.getElementById(ObjID);
 }
 
