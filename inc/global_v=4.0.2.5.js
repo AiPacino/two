@@ -1,4 +1,4 @@
-function $2(ObjID){
+function (ObjID){
 	return document.getElementById(ObjID);
 }
 
@@ -107,7 +107,7 @@ function key(e){
 }
 
 function CheckSearch(Language){
-	var SearchKey=$2("search_key");
+	var SearchKey=("search_key");
 	if (SearchKey.value=="" || SearchKey.value=="请输入搜索关键词" || SearchKey.value=="Please enter keywords"){
 		if (Language=="cn"){
 			alert("请输入搜索关键词！");
@@ -124,7 +124,7 @@ function CheckSearch2(Evt,Language){
 	Evt=Evt?Evt:(window.event?window.event:"");
 	var Key=Evt.keyCode?Evt.keyCode:Evt.which;
 	if (Key==13){
-		var SearchKey=$2("search_key");
+		var SearchKey=("search_key");
 		if (SearchKey.value=="" || SearchKey.value=="请输入搜索关键词" || SearchKey.value=="Please enter keywords"){
 			if (Language=="cn"){
 				alert("请输入搜索关键词！");
@@ -139,14 +139,14 @@ function CheckSearch2(Evt,Language){
 }
 
 function FloatDiv(ObjID,Ch){
-	var Did=$2(ObjID);
+	var Did=(ObjID);
 	var DidTop=parseInt(Did.style.top);
 	var Diff=(document.documentElement.scrollTop+document.body.scrollTop+Ch-DidTop)*.80;
 	Did.style.top=Ch+document.documentElement.scrollTop+document.body.scrollTop-Diff+"px";
 	setTimeout("FloatDiv('"+ObjID+"',"+Ch+")",20);
 }
 function FloatDiv2(ObjID,Ch){
-	var Did=$2(ObjID);
+	var Did=(ObjID);
 	var DidTop=parseInt(Did.style.top);
 	var Diff=(document.documentElement.clientHeight-53-Ch+document.documentElement.scrollTop+document.body.scrollTop-DidTop)*.80;
 	Did.style.top=document.documentElement.clientHeight-53-Ch+document.documentElement.scrollTop+document.body.scrollTop-Diff+"px";
@@ -201,7 +201,7 @@ function Track(){
 		$('#track_code').focus();
 		return false;
 	}
-	var url='http://www.i-oms.cn/#/ImplantOrdertracking?to=one&serialNumber='+escape($('#track_code').val())+'&options=2&companyNo='+$('#company_no').val();
+	var url='https://www.i-oms.cn/#/ImplantOrdertracking?to=one&serialNumber='+escape($('#track_code').val())+'&options=2&companyNo='+$('#company_no').val();
 	window.open(url,'_blank','');
 }
 
@@ -216,7 +216,7 @@ function Freight(){
 		$('#yf_weight').focus();
 		return false;
 	}
-	var url='http://www.i-oms.cn/#/offeraquery?to=one&chargeWeight='+$('#yf_weight').val()+'&packageType='+$('#yf_package').val()+'&transCategory=&destNo='+$('#yf_country').val()+'&companyNo='+$('#company_no').val();
+	var url='https://www.i-oms.cn/#/offeraquery?to=one&chargeWeight='+$('#yf_weight').val()+'&packageType='+$('#yf_package').val()+'&transCategory=&destNo='+$('#yf_country').val()+'&companyNo='+$('#company_no').val();
 	window.open(url,'_blank','');
 }
 
@@ -232,7 +232,7 @@ function Login(ObjForm){
 		return false;
 	}
 	Loading(1);
-	var loginApi='http://www.i-oms.cn/user-center/tmsApiLogin/1.0';
+	var loginApi='https://www.i-oms.cn/user-center/tmsApiLogin/1.0';
 	$.ajax({
 		url:loginApi,
 		type:'post',
@@ -242,7 +242,7 @@ function Login(ObjForm){
 			Loading_Remove(1);
 			var code=data.result_code;
 			if (code==0){
-				window.location.href='http://www.i-oms.cn/'+data.body;
+				window.location.href='https://www.i-oms.cn/'+data.body;
 			}else if (code == 1001){
 				alert('密码或者用户名错误!');
 			}else{
@@ -260,7 +260,7 @@ function Reg(){
 		return false;
 	}
 	Loading(1);
-	var regApi='http://www.i-oms.cn/oms-web/useUserNocreateInviteCode/1.0';
+	var regApi='https://www.i-oms.cn/oms-web/useUserNocreateInviteCode/1.0';
 	$.ajax({
 		url:regApi,
 		type:'post',
