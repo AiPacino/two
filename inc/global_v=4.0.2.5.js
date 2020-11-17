@@ -370,8 +370,6 @@ function Wints(Content){
 	win_ts_tid2=setTimeout(function(){$("#win_ts").remove();},2500);
 }
 
-/*===================================================================================*/
-
 $(function(){
 	if ($(".editorc").length>0) PicWidth();
 	if ($(".editorc2").length>0) PicWidth2();
