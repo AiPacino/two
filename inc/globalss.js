@@ -270,7 +270,7 @@ function Reg(){
 			Loading_Remove(1);
 			var code=data.result_code;
 			if (code==0){
-				window.location.href='http://www.i-oms.cn/'+data.body;
+				window.location.href='https://www.i-oms.cn/'+data.body;
 			}else if (code == 1001){
 				alert('用户名错误!');
 			}else{
